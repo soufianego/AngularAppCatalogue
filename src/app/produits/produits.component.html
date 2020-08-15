@@ -1,0 +1,11 @@
+
+  <table class="table table-striped" *ngIf="products">
+   <thead>  <tr>
+          <th>Name</th><th>Price</th>
+      </tr></thead> 
+    <tbody>  <tr *ngFor ="let p of products._embedded.products" >
+<td>{{p.name}}</td>
+<td>{{p.price}}</td>
+</tr>
+</tbody>
+  </table>
